@@ -1,0 +1,102 @@
+ITEM 1
+Binding=Electronics
+Brand=Mediasonic
+CatalogNumberList=HW180STB
+EAN=0629329006595
+EANList=0629329006595
+Feature=Converts digital ATSC broadcast to your Analog & Digital TV, Projector, and Monitor
+Feature=USB Multimedia Player (Support USB Flash Drive up to 64GB)
+Feature=Support MPEG-1 Layer I & II Dolby Digital Audio, Support MPEG-2/4, H.264/AVC, 1080P HD Digital TV
+Feature=HDMI 1080P Output / Composite Output / Coaxial Output, Analog Pass Through, Channel 3 / 4 Function
+Feature=Favorite Channel List, Parental Control Function, Auto Tuning, Closed Caption, Auto, 16:9 Pillar Box, 16:9 Pan G Scan, 4:3 Letter Box, 4:3 Pan G Scan, 4:3 Full, 16:9 Wide Screen
+ItemDimensions=45071060140
+Label=Major League Global Enterprise LLC
+ListPrice=4999USD$49.99
+Manufacturer=Major League Global Enterprise LLC
+ManufacturerPartsWarrantyDescription=1 Year Manufacture Warranty
+Model=HW180STB
+MPN=HW180STB
+NumberOfItems=1
+PackageDimensions=4501170135910
+PackageQuantity=1
+PartNumber=HW180STB
+ProductGroup=Home Theater
+ProductTypeName=TUNER
+Publisher=Major League Global Enterprise LLC
+Studio=Major League Global Enterprise LLC
+Title=Mediasonic HW180STB HomeWorx HDTV Digital Converter Box with Media Player Function, Dolby Digital and HDMI Out
+UPC=629329006595
+UPCList=629329006595
+Warranty=1 year warranty
+
+ITEM 2
+Binding=Electronics
+Brand=SANOXY
+Feature=Converts analog L/R signals to digital S/PDIF or TOSLink. Both TOSlink and Coax digital outputs may be used simultaneously
+Feature=Digital audio cable length can run up to 15 feet without signal degradation. Supports output sampling rate at 48KHz
+Feature=Provides electromagnetic noise free transmission
+Feature=Supports uncompressed 2-channel LPCM digital audio signal output. Easy to install and simple to operate.
+Feature=Package Includes: 1 x Analog Stereo to Digital Optical Coax Audio Converter, 1 x Power Adapter(supply:110V~240V), 1 x User Manual
+Label=BrainyTrade
+LegalDisclaimer=Must be at least 18 & over to purchase
+ListPrice=5860USD$58.60
+Manufacturer=BrainyTrade
+Model=SANOXY_ANLG_AU-DIG_AU-2
+MPN=SANOXY_ANLG_AU-DIG_AU-2
+PackageDimensions=24054060470
+PackageQuantity=1
+PartNumber=SANOXY_ANLG_AU-DIG_AU-2
+ProductGroup=Home Theater
+ProductTypeName=TUNER
+Publisher=BrainyTrade
+Studio=BrainyTrade
+Title=SANOXY� Analog to Digital Audio Converter Adapter
+
+ITEM 3
+Binding=Electronics
+Brand=Magnavox
+EAN=0053818560112
+EANList=00538185601120053818560013
+Feature=Simple EPG
+Feature=Downloadable Rating (V-chip 2.0)
+Label=Magnavox
+LegalDisclaimer=This item comes from a private seller. 
+It was just never used.
+New in Box
+Manufacturer=Magnavox
+Model=TB100MW9
+MPN=TB100MW9
+PackageDimensions=3701130210840
+PackageQuantity=1
+PartNumber=TB100MW9
+ProductGroup=CE
+ProductTypeName=DIGITAL_VIDEO_RECORDER
+Publisher=Magnavox
+Studio=Magnavox
+Title=Magnavox DTV Digital to Analog Converter
+UPC=053818560013
+UPCList=053818560013053818560112
+
+ITEM 4
+Binding=Electronics
+Brand=Digital Stream
+Color=Black
+EAN=0094922881380
+EANList=00949228813800094922928665
+ItemDimensions=175
+Label=Digital Stream
+LegalDisclaimer=It you return this item, it must be in the same condition you received it.  If not, it will not be accepted.
+ListPrice=5999USD$59.99
+Manufacturer=Digital Stream
+Model=DTX9900
+MPN=DTX9900
+PackageDimensions=1801090190920
+PackageQuantity=1
+PartNumber=DTX9900
+ProductGroup=CE
+ProductTypeName=CE_ACCESSORY
+Publisher=Digital Stream
+Studio=Digital Stream
+Title=Digital Stream Digital-to-Analog Converter Box
+UPC=094922928665
+UPCList=094922928665094922881380
