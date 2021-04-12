@@ -7,3 +7,7 @@ Code :
 
 https://github.com/python-engineer/pytorch-chatbot
 
+
+Scrapper : 
+
+https://www.pingshiuanchua.com/blog/post/scraping-search-results-from-google-search
