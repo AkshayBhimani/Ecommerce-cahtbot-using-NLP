@@ -58,7 +58,7 @@ def getAll(productName):
     print('link :', clean_links[0])
     print()
     productLink = clean_links[0]
-    
+    print(clean_links)
     productReviewsLink = productLink.replace('/dp/','/product-reviews/')
     print(productReviewsLink)
 
@@ -114,4 +114,4 @@ def getAll(productName):
 
 
 
-getAll("Redmi 9 (Sky Blue, 4GB RAM, ")
+getAll("one plus 9 ")

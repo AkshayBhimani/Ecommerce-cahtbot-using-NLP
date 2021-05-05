@@ -14,7 +14,7 @@ def getLink():
 
     import requests
     from fake_useragent import UserAgent
-    from bs4 import BeautifulSoup
+    from bs4 import BeautifulSoup   
 
     ua = UserAgent()
 

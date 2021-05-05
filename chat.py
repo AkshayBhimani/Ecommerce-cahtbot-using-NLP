@@ -6,6 +6,10 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
+import sys
+sys.path.append('/.../EcommerceChatbot/Combined_scraper_and_sentiment_analysis/combined_scraper_and_model')
+from Combined_scraper_and_sentiment_analysis.combined_scraper_and_model import get_reviews
+# from Combined_scraper_and_sentiment_analysis import combined_scraper_and_model.get_reviews
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
@@ -14,7 +18,7 @@ with open('intents.json', 'r') as json_data:
 FILE = "data.pth"
 data = torch.load(FILE)
 
-input_size = data["input_size"]
+input_size = data["input_size"] 
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
@@ -25,14 +29,14 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Khaleesi"
+bot_name = "SmartBot"
 print("Let's chat! (type 'quit' to exit)")
 
-while True:
+
+def fxn(input_str):
     # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
+    # sentence = input("You: ")
+    sentence = input_str
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -43,15 +47,17 @@ while True:
     _, predicted = torch.max(output, dim=1)
 
     tag = tags[predicted.item()]
+    x = None
+    iflag = False
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                x = (f"{random.choice(intent['responses'])}")
                 if intent["tag"]== "ask_review":
-                    productName = input('Product Name :')
-                    print('Product is : ',productName)
+                    iflag = True
     else:
-        print(f"{bot_name}: I do not understand...")
+        x = (f" I do not understand...")
+    return x , iflag

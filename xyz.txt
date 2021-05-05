@@ -1,0 +1,13 @@
+categories :
+    - GoodBye
+conversations: 
+    - - Bye Bye
+      - Bye! Come again soon
+    - - Good Bye
+      - Have a good day.
+    - - See you later
+      - See you soon.
+    - - Catch you later 
+      - anytime
+    - - See ya!
+      - Bye Bye. 

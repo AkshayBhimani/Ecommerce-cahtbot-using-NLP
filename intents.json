@@ -50,11 +50,30 @@
         "What is review of Apple Iphone 11 pro?",
         " Should I buy Boat Basshead 100 wired earphone?",
         "Can you give me review for Ipad",
-        "I want review for *"
+        "I want review for *",
+        "I want to buy headphones",
+        " Review * ",
+        "should I buy this product ?",
+        "Redmi note 5 is a good purchase?",
+        "how good this product is" ,
+        "give me reviews",
+        "buy me that",
+        "help me to buy this product",
+        "Is this a good product?",
+        "Is this a bad product?",
+        "google this prodcut",
+        "share me the reviews of this product",
+        "help me with the reviews of the product",
+        "how to buy ",
+        "share me the details of the product",
+        "product details",
+        "give me product details"
 
       ],
       "responses":[
-        " Please write product name below "
+        " Please write only product name below ",
+        "Please give us the product name again",
+        "can you spell the product name again "
       ]
 
     }
