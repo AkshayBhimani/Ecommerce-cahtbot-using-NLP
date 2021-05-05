@@ -124,14 +124,14 @@ def getAll(productName):
     
 
     df = pd.DataFrame(reviewlist)
-    # print(list(df.columns))
+    print(list(df.columns))
     # df.to_excel(str(productName)+'.xlsx', index=False)
     df_prince = df[['body','rating']]
     # print(df_prince.head(10))
     reviews_for_prince = df['body'].to_list()
     rating_for_prince = df['rating'].to_list()
 
-    return reviews_for_prince, rating_for_prince
+    return reviews_for_prince, rating_for_prince,productLink
 
 
 ##Starting the part of sentiment analysis here.
@@ -150,7 +150,7 @@ def get_reviews(prod_name):
 
   x = ""
   x1 = ""
-  reviews, ratings = getAll(prod_name)
+  reviews, ratings,link = getAll(prod_name)
   flags = list()
 
   cnt = 1
@@ -161,7 +161,6 @@ def get_reviews(prod_name):
       flags.append(1)
     else: 
       flags.append(0)
-    print("\n\n")
     cnt += 1
 
   print(flags)
@@ -169,18 +168,20 @@ def get_reviews(prod_name):
   print(ultimate_sentiment)
   ultimate_rating = sum(flags)/len(flags)
   print(ultimate_rating, '% positive')
+  postive_review = ultimate_rating*100
   if ultimate_rating < 0.5:
-    x = ("You should not buy this.")
+    from_review = (f"You should not buy {prod_name}")
   else: 
-    x = ("You should buy this.")
+    from_review = (f"You should buy {prod_name}")
 
   according_to_rating = sum(ratings)/len(ratings)
+  postive_rating = according_to_rating
   print(according_to_rating)
   if ultimate_rating > 3:
-    x1= ("You should not buy this.")
+    from_rating= ("You should not buy this.")
   else: 
-    x1 =("You should buy this.")
-  return x,x1
+    from_rating =("You should buy this.")
+  return from_review,from_rating,postive_review,postive_rating,link
 
 # zz,zv = get_reviews("samsung s21 ulta")
 # print("zz zv",zz,zv)

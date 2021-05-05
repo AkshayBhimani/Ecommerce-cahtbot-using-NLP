@@ -43,12 +43,19 @@ def chat():
         else:
             return jsonify(result)
     else:
-        print("Running Queery",user_query)
-        result1,result2 = get_reviews(user_query)
-        # result1 = "12"
-        print("Done")
-        flag = False
-        return jsonify(result1)
-
+        # q = user_query
+        # user_query = ""
+        # chat()
+        try:
+            print("Running Queery",user_query)
+            from_review,from_rating, positive_review, positive_rating,link = get_reviews(user_query)
+            result1 = f' <b>{from_review}</b> ' + '<br>'   + f'Positive Review : {round(positive_review,2)}%' + '<br>'+ f'Average Rating: {round(positive_rating,2)}' + '<br>' + 'View Product' + f'<a href="{link}" target="_blank" >  Here </a>'             
+            print(result1)
+            flag = False
+            return jsonify(result1)
+        except:
+            result1 = "Please write correct Product Name"
+            flag = True
+            return jsonify(result1)
 if __name__ == "__main__":
     app.run(debug=True)
